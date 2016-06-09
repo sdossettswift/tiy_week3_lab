@@ -66,3 +66,5 @@ Additional Resources
 
     My favorite tutorial for learning Regular Expressions is RegexOne
     The best way to fiddle with Regex is Regexr
+http://regexone.com/
+http://regexr.com/
