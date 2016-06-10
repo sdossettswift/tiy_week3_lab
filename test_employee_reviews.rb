@@ -1,7 +1,7 @@
 require "minitest/autorun"
 require "./department"
-requir "./employee"
+require "./employee"
 
 class EmployeeReviewTest < MiniTest::Test
 
-    end
+end
