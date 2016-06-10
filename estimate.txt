@@ -1,0 +1,9 @@
+Estimate: 6 hours
+
+Breakdown
+  Writing Tests : 2 hours
+  Employee Class: .75 hours
+  Department Class: .75 hours
+
+  Explorer Mode: 1.5 hours
+  
