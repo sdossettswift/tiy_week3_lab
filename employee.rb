@@ -1,5 +1,5 @@
 class Employee
-    attr_accessor :name
+    attr_accessor :name, :email
 
     def initialize
         @name = " "
@@ -10,7 +10,12 @@ class Employee
         @name
     end
 
+    def email
+        @email
+    end
+
     employee = Employee.new
+
 
 
 end

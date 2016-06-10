@@ -9,6 +9,12 @@ class EmployeeReviewTest < MiniTest::Test
         assert name = :name
     end
 
+    def test_employee_has_email
+        employee = Employee.new
+        email = employee.email
+        assert email = :email
+    end
+
 end
 
 
