@@ -14,6 +14,11 @@ class Employee
         @email
     end
 
+    def phone
+        @phone
+    end
+
+
     employee = Employee.new
 
 

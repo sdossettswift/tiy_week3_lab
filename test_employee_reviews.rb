@@ -15,6 +15,31 @@ class EmployeeReviewTest < MiniTest::Test
         assert email = :email
     end
 
+    def test_employee_has_phone
+        employee = Employee.new
+        phone = employee.phone
+        assert phone = :phone
+    end
+
+    def test_employee_has_salary
+        skip
+        employee = Employee.new
+        salary = employee.salary
+        assert salary = :salary
+    end
+
+    def test_employee_has_department
+        skip
+        employee = Employee.new
+        department = employee.department
+        assert department = :department
+    end
+
+
+
+
+
+
 end
 
 
