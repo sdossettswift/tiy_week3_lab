@@ -5,18 +5,18 @@ require "./employee"
 class EmployeeReviewTest < MiniTest::Test
     def setup
         @employee = Employee.new {
-            name:"Sarah Swift"
-            email:"sarahdswift@gmail.com"
-            phone:"713-582-1481"
-            salary:"100_000"
-            department:"Development"
-            review:"EXCELLENT."
-            rating:"satisfactory"
+            # name:"Sarah Swift"
+            # email:"sarahdswift@gmail.com"
+            # phone:"713-582-1481"
+            # salary:"100_000"
+            # department:"Development"
+            # review:"EXCELLENT."
+            # rating:"satisfactory"
         }
     end
 
     def test_employee_has_name
-        @employee.name ="Sarah Swift"
+        @employee.name = "Sarah Swift"
         assert_equal "Sarah Swift", @employee.name
     end
 
