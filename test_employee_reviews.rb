@@ -3,40 +3,57 @@ require "./department"
 require "./employee"
 
 class EmployeeReviewTest < MiniTest::Test
+    # def setup
+    #     @employe = Employee.new {
+    #         name:"Sarah Swift"
+    #         email:"sarahdswift@gmail.com"
+    #         phone:"713-582-1481"
+    #         salary:"100_000"
+    #         department:"Development"
+    #         review:"EXCELLENT."
+    #         rating:"satisfactory"
+    #     }
+    #
+    # end
     def test_employee_has_name
-        employee = Employee.new
-        name = employee.name
-        assert name = :name
+        employee = Employee.new "Sarah Swift"
+        assert_equal "Sarah Swift", employee.name
     end
 
-    def test_employee_has_email
-        employee = Employee.new
-        email = employee.email
-        assert email = :email
-    end
-
-    def test_employee_has_phone
-        employee = Employee.new
-        phone = employee.phone
-        assert phone = :phone
-    end
-
-    def test_employee_has_salary
-        skip
-        employee = Employee.new
-        salary = employee.salary
-        assert salary = :salary
-    end
-
-    def test_employee_has_department
-        skip
-        employee = Employee.new
-        department = employee.department
-        assert department = :department
-    end
-
-
-
+    # def test_employee_has_email
+    #     email = @employee.email
+    #     assert email = "sarahdswift@gmail.com"
+    # end
+    #
+    # def test_employee_has_phone
+    #     phone = @employee.phone
+    #     assert phone = "713-582-1481"
+    # end
+    #
+    # def test_employee_has_salary
+    #     salary = @employee.salary
+    #     assert salary = :salary
+    # end
+    #
+    # def test_employee_has_department
+    #     department = @employee.department
+    #     assert department = :department
+    # end
+    #
+    # def test_employee_has_review
+    #     review = @employee.review
+    #     assert review = :review
+    # end
+    #
+    # def test_employee_has_rating
+    #     rating = @employee.rating
+    #     assert rating = :rating
+    # end
+    #
+    # def test_employee_sarah_should_be_sarah
+    #
+    # end
+    #
 
 
 

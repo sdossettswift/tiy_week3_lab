@@ -1,8 +1,18 @@
-class Employee
-    attr_accessor :name, :email
+require 'csv'
+require 'pp'
 
-    def initialize
-        @name = " "
+
+class Employee
+    attr_accessor :name, :email, :phone, :salary, :department, :review, :rating
+
+    def initialize(name)
+        @name = name
+        # @email = "employee email"
+        # @phone = "employee phone"
+        # @salary = "employee salary"
+        # @department = "employee department"
+        # @review = "employee reviews"
+        # @rating = "employee rating"
 
     end
 
@@ -18,9 +28,33 @@ class Employee
         @phone
     end
 
+    def salary
+        @salary
+    end
 
-    employee = Employee.new
+    def department
+        @department
+    end
 
+    def review
+        @review
+    end
+
+    def rating
+        @rating
+    end
+
+    # employee = Employee.new ("Sarah Swift")
 
 
 end
+
+# employee = Employee.new {
+#     name:"Sarah Swift"
+#     email:"sarahdswift@gmail.com"
+#     phone:"713-582-1481"
+#     salary:"100_000"
+#     department:"Development"
+#     review:"EXCELLENT."
+#     rating:"satisfactory"
+# }
