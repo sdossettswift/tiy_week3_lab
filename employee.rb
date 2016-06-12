@@ -5,7 +5,7 @@ require 'pp'
 class Employee
     attr_accessor :name, :email, :phone, :salary, :department, :review, :rating
 
-    def initialize(name)
+    def initialize
         @name = name
         # @email = "employee email"
         # @phone = "employee phone"
