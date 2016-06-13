@@ -5,14 +5,14 @@ require 'pp'
 class Employee
     attr_accessor :name, :email, :phone, :salary, :department, :review, :rating
 
-    def initialize
-        @name = name
-        # @email = "employee email"
-        # @phone = "employee phone"
-        # @salary = "employee salary"
-        # @department = "employee department"
-        # @review = "employee reviews"
-        # @rating = "employee rating"
+    def initialize 
+        @name        = "name"
+        @email       = "email"
+        @phone       = "phone"
+        @salary      = "salary"
+        @department  = "department"
+        @review      = "review"
+        @rating      = "rating"
 
     end
 
@@ -44,17 +44,4 @@ class Employee
         @rating
     end
 
-    # employee = Employee.new ("Sarah Swift")
-
-
 end
-
-# employee = Employee.new {
-#     name:"Sarah Swift"
-#     email:"sarahdswift@gmail.com"
-#     phone:"713-582-1481"
-#     salary:"100_000"
-#     department:"Development"
-#     review:"EXCELLENT."
-#     rating:"satisfactory"
-# }

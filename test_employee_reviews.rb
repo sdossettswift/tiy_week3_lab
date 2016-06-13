@@ -4,15 +4,8 @@ require "./employee"
 
 class EmployeeReviewTest < MiniTest::Test
     def setup
-        @employee = Employee.new {
-            # name:"Sarah Swift"
-            # email:"sarahdswift@gmail.com"
-            # phone:"713-582-1481"
-            # salary:"100_000"
-            # department:"Development"
-            # review:"EXCELLENT."
-            # rating:"satisfactory"
-        }
+        @employee =  Employee.new
+        @department = Department.new
     end
 
     def test_employee_has_name
@@ -51,20 +44,28 @@ class EmployeeReviewTest < MiniTest::Test
         assert_equal "satisfactory", @employee.rating
     end
 
+    def test_add_department
+        @department.dept = "Development"
+        assert_equal "Development", @department.dept
+    end
+
+    def test_department_has_people
+        @department.add_employee("Sarah")
+        assert_includes ["Sarah"], @department.employees_in_dept
+
+    end
+
+    # def test_give_raise
+    #     @department.employees_in_dept[:sarah, :louise]
+    #     department.give_raise
+    #
+    #     assert_equal
+    # end
+
+
 end
 
-#
-# Employee
-# name
-# email address
-# phone number
-# salary
-# department
-# review
-# satisfactory/unsatisfactory
-#
-# *get salary
-# *get name
+
 # *add review
 # *give a raise
 #
