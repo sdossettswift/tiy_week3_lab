@@ -1,7 +1,7 @@
 # require "./employee"
 
 class Department
-    attr_accessor :department_name, :employees_in_dept, :raise_eligible, :raise_ineligible
+    attr_accessor :department_name, :employees_in_dept, :raise_eligible, :raise_ineligible, :total_salaries
 
     def initialize
         @employees_in_dept = Array.new
@@ -23,6 +23,13 @@ class Department
         puts @employees_in_dept.inspect
     end
 
+    def total_salaries
+        @employees_in_dept.each do |employee|
+            total_salaries =+ employee.salary
+        end
+    end
+
+
     def who_is_raise_eligible?
         @employees_in_dept.each do |employee|
             if employee.rating == "unsatisfactory"
@@ -37,7 +44,10 @@ class Department
             @raise_eligible.each do |employee|
                 percentage = 1.0 + (percentage.to_i/100.0)
                 employee.salary = (employee.salary * percentage).to_i
-                            end
+
+            end
         end
     end
+
+
 end
