@@ -55,13 +55,10 @@ class EmployeeReviewTest < MiniTest::Test
 
     end
 
-    # def test_give_raise
-    #     @department.employees_in_dept[:sarah, :louise]
-    #     department.give_raise
-    #
-    #     assert_equal
-    # end
-
+    def test_give_employee_raise
+        @employee.give_employee_raise(50)
+        assert_equal 75_000, @employee.salary
+    end
 
 end
 

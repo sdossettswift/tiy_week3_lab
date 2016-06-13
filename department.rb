@@ -16,5 +16,8 @@ class Department
 
     end
 
+    def list_employees
+        puts @employee_list.inspect
+    end
 
 end
